@@ -1,0 +1,2 @@
+# HttpCore
+.NET HttpClient implementation
