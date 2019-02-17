@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>José Juan Toscano Cuenca</Authors>
+    <Version>0.9.0</Version>
+    <PackageLicenseFile>License.txt</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/jjtoscano/HttpCore</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/jjtoscano/HttpCore/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>Copyright (c) 2019 jjtoscano</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+    <None Include="License.txt" Pack="true" Visible="false" PackagePath="" />
+  </ItemGroup>
+
+</Project>
