@@ -40,6 +40,10 @@ Once you have added the package to your project, you just have to instantiate th
 
 The generic T that is included in the call represents the type of the error entity that is going to capture our HttpService instance. For this, the **HttpServiceException** type is provided to capture exceptions produced in the HttpService layer.
 
+## Examples
+
+- [Twitter API](https://github.com/jjtoscano/HttpCore/tree/master/Example) 
+
 ### Example SendAsync to get a oAuth token from twitter API
 
 ```C#
@@ -95,7 +99,7 @@ using(HttpService httpService = new HttpService())
 
             if (!string.IsNullOrEmpty(response))
             {
-                qnaResponse = JsonConvert.DeserializeObject<Response>(response);
+                response = JsonConvert.DeserializeObject<Response>(response);
             }
         }
         catch (HttpServiceException<ErrorResponse> apiEx)
