@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Example.Twitter;
 using Example.Twitter.Entities;
 using HttpCore.Entities;
@@ -13,11 +14,16 @@ namespace Example
 
         static void Main(string[] args)
         {
+            AsyncMain().Wait();
+        }
+
+        static async Task AsyncMain()
+        {
             try
             {
                 Console.WriteLine("Sending oauth request for twitter...");
 
-                OAuthToken token = TwitterService.OAuth(CONSUMER_KEY, SECRET_KEY).Result;
+                OAuthToken token = await TwitterService.OAuth(CONSUMER_KEY, SECRET_KEY);
 
                 Console.WriteLine($"OAuth success: {token.Token}");
             }

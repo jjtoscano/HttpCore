@@ -3,11 +3,14 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <Authors>José Juan Toscano Cuenca</Authors>
-    <Version>0.9.0</Version>
+    <Version>0.9.1</Version>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
     <RepositoryUrl>https://github.com/jjtoscano/HttpCore</RepositoryUrl>
     <PackageLicenseUrl>https://github.com/jjtoscano/HttpCore/blob/master/LICENSE</PackageLicenseUrl>
     <Copyright>Copyright (c) 2019 jjtoscano</Copyright>
+    <AssemblyVersion>0.9.1.0</AssemblyVersion>
+    <FileVersion>0.9.1.0</FileVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>

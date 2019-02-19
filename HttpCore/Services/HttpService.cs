@@ -154,7 +154,7 @@ namespace HttpCore.Services
             try
             {
                 // if the text response can be be deserialize into T, we will know there is a API error
-                T error = JsonConvert.DeserializeObject<T>(textResponse);
+                T error = JsonConvert.DeserializeObject<T>(textResponse, new JsonSerializerSettings { MissingMemberHandling = MissingMemberHandling.Error });
                 throw new HttpServiceException<T>((int)statusCode, error);
             }
             catch (JsonException) { }
