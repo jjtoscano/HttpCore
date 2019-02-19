@@ -9,7 +9,7 @@ HttpCore is available via:
 * NuGet Official Releases: [![NuGet](https://img.shields.io/nuget/vpre/HttpCore.svg?label=NuGet)](https://www.nuget.org/packages/HttpCore)
 
 ```
-Install-Package HttpCore -Version 0.9.0
+Install-Package HttpCore -Version 0.9.1
 ```
 
 ## Supported platforms
